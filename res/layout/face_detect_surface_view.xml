@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include  android:id="@+id/title"  layout="@layout/base_title"/>
+    
+    <org.opencv.android.JavaCameraView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fd_activity_surface_view" />
+    
+    <ImageButton 
+        android:id="@+id/takeBtn"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20px"
+        android:background="@drawable/btn_shutter_background"
+        android:text="拍照"/>
+
+</RelativeLayout>
